@@ -1,0 +1,110 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+nav ul{
+    list-style-type: none;
+}
+nav{
+    background-color: rgb(77, 21, 128);
+    color:white;
+    height:70px;
+    font-size: 60px;
+    display:flex;
+    align-items: center;
+    padding:5px;
+    font-family: "Comfortaa", sans-serif;
+    width:auto;
+}
+.gameContainer
+{
+    display:flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.container{
+    display: grid;
+    position: relative;
+    grid-template-rows: repeat(3,10vw);
+    grid-template-columns: repeat(3,10vw);
+    font-family: 'Times New Roman', Times, serif;
+}
+.box {
+    border: 2px solid black;
+    font-size: 10vw;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    display: flex; /* Add this line */
+}
+
+.box:hover{
+    background-color: skyblue;
+}
+.gameinfo{
+    padding:0 34px;
+}
+.imgbox img
+{
+width:0;
+transition:width is ease-in-out;
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+#reset
+{
+    border-radius: 5px;
+    padding:4px;
+    width:100px;
+    height: 30px;
+    background-color:  rgb(77, 21, 128);
+    border: 1px solid black;
+    color: white;
+    font-family: "Comfortaa", sans-serif;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.line
+{
+    background-color: rgb(72, 34, 84);
+    height:4px;
+    width:0vw;
+    position:absolute;
+    transition: width 1s ease-in-out;
+}
+@media only screen and (max-width: 800px){
+  .gameContainer{
+    flex-wrap: wrap;
+  }
+  .gameinfo{
+    margin-top: 34px;
+  }
+  .gameinfo h1{
+    font-size: 1.5rem;
+  }
+  nav{
+    font-size:6vw;
+    height: auto;
+    padding: 1vw;
+    width: auto;
+  }
+  #reset{
+    margin-top: 34px;
+    display: flex;
+
+  }
+}
